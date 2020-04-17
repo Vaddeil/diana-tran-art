@@ -1,0 +1,78 @@
+body {
+  margin: 0; /*Normalize*/
+  padding: 0; /*Normalize*/
+}
+
+.page-header {
+  /*Change text styling*/
+  color: #223843;
+  border-bottom: 4px solid #8ad5e8;
+  text-align: center;
+}
+/*********************/
+/* Card Styling */
+/*********************/
+.cards {
+  /*Making it responsive*/
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  /* margin: 1rem 0rem 1rem 0rem; */
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: arial; /*Change font*/
+  background-color: #dfc1b1; /*Make the card match color*/
+  border-radius: 15px;
+}
+
+.card h1 {
+  background-color: #dfc1b1; /*Make the background match color with the card*/
+  color: #223843;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.card a {
+  color: #223843;
+  /*Make the link full width of card*/
+  display: inline-block;
+  width: 100%;
+  /*Removed link styling and changed font size*/
+  font-size: 1.5rem;
+  text-decoration: none;
+  /*Make link button like*/
+  border: solid 1.5px #223843;
+  background-color: #8ad5e8;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card a:hover {
+  color: #dfc1b1;
+  background-color: #223843;
+  transition: 0.4s;
+}
+
+img {
+  width: 100%; /* Make 100% of card */
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+}
